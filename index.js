@@ -6,18 +6,21 @@ Follow-up: Can you do this in linear time and constant space?
 */
 
 function getSingles(arr) {
-    let mapper = {}
-    let singles = []
+    let len = 0;
+    let numCount = Array(Math.max(...arr));
+    let result = Array(Math.max(...arr));
     for (num of arr) { 
-        mapper[num] = (mapper[num] || 0) + 1
+        numCount[num] = (numCount[num] || 0) + 1;
     }
-    Object.keys(mapper).map(num => {
-        if (mapper[num] == 1) {
-            singles.push(num)
+    
+    numCount.map((val, index) => {
+        if( val === 1) {
+            result.push(index);
         }
     })
-    return singles;
+    
+    return result.filter( slot => slot !== null ); // returns array of strings
 }
 
-Time: O(n), n is with respect to length of input of array
-Space: O(n), n is with respect to length of input array at most
+// Time: O(n), n is with respect to the maximum number in the array
+// Space: O(1), arrays defined have specific set positions
