@@ -1,3 +1,16 @@
+/*	Given an 2D array containing each pixel color, and a slot to select, 
+	change the given pixel to a designated one, as well as any adjacent mutual slots
+ 	ie. Input: row-2 col-2, change to 'G'
+	array > [['B', 'B', 'W'],
+	      	['W', 'W', 'W'],
+              	['W', 'W', 'W'],
+              	['B', 'B', 'B']];
+	output > [['B', 'B', 'G'],
+	      	['G', 'G', 'G'],
+              	['G', 'G', 'G' <<<<<<< (This is the row-2 col-2 start)],
+              	['B', 'B', 'B']];
+*/
+
 function pixelSwap(arr, row, col, oldColor, newColor) {
 	if (arr.length > 1) {
     if(!oldColor) {
@@ -21,7 +34,7 @@ function pixelSwap(arr, row, col, oldColor, newColor) {
 }
 
 let pixels = [['B', 'B', 'W'],
-							['W', 'W', 'W'],
+	      ['W', 'W', 'W'],
               ['W', 'W', 'W'],
               ['B', 'B', 'B']];
     
