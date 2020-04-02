@@ -24,7 +24,5 @@ function lca(root, v1, v2) {
   
   // Once we finally get in a position where our value is in between both maximas, return the lca node
   // ie. [v1 <value v2]
-  if(node.info > v1.info && node.info < v2.info) {
-    return node;
-  }
+  return node;
 }
