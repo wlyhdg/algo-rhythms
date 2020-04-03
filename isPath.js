@@ -19,7 +19,7 @@ function isPath(start, end) {
   
   //process graph until there are no nodes to visit (defined by the length of the nodes queue)
   while(queue.length > 0) {
-    let currNode = queue.dequeue(start)  // remove current node to process
+    let currNode = queue.dequeue()  // remove current node to process
     
     /* check all adjacent nodes of the current one. I am calling the adjacent nodes children here 
        since this is a directed graph
