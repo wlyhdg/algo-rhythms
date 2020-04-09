@@ -24,3 +24,6 @@ var addTwoNumbers = function(l1, l2) {
     
     return head.next;
 };
+
+// Space: O(Math.max(M.N)) with respect to longest input list
+// Time: O(Math.max(M,N)) with respect to longest input list
