@@ -10,7 +10,6 @@ var addTwoNumbers = function(l1, l2) {
         if (!l2) {
             l2 = new ListNode(0);
         }
-        console.log("l1@@@@", l1, "l2@@@@", l2, "carry@@@@", carry);
         let sum = l1.val + l2.val + carry;
         carry = Math.floor(sum / 10);
         current.next = new ListNode(sum % 10)
