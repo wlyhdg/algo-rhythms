@@ -24,7 +24,11 @@ var function = isValidBST(root) {
     }
     
     // return final truthiness of left and right branches
-    return dfs(root.left, root.val, max) && dfs(root.right, min, root.val)
-    
+    return dfs(root.left, root.val, max) && dfs(root.right, min, root.val);
   }
+  
+  return dfs(root, null, null);
 }
+
+// Space Complexity: O(1)
+// Time Complexity: O(N) wrt to height of the tree
