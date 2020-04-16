@@ -31,4 +31,4 @@ var function = isValidBST(root) {
 }
 
 // Space Complexity: O(1)
-// Time Complexity: O(N) wrt to height of the tree
+// Time Complexity: O(N) wrt to nodes of a tree
