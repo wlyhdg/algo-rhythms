@@ -25,3 +25,10 @@ var inorderTraversal = function(root) {
 
     }
 };
+
+// Can do this problem iteratively by using a Stack; while stack is not empty and current node is not null, add current node and then while loop left side and add to stack
+// Add right side after
+
+
+// Space Complexity: O(n) wrt nodes of tree
+// Time Complexity: O(n) wrt nodes of tree
