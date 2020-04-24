@@ -54,3 +54,9 @@ function numSquares(n) {
     }
   }
 } 
+
+// Space Complexity: O(m * n) where m is wrt Math.sqrt(n)
+// Time Complexity: O(n) with optimized visited nodes
+
+
+
