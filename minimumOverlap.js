@@ -9,17 +9,16 @@ The intervals are not necessarily sorted in any order.
 */
 
 function minimumOverlap(intervals) {
-	let count = 0;
+  let count = 0;
   let i = 0;
   let j = 1;
   
   // sort the intervals in order of the time they started
-	let si = intervals.sort((a, b) => a[0] - b[0]);
+  let si = intervals.sort((a, b) => a[0] - b[0]);
   
   // look at previous intervals end time vs next intervals start time. For there not to be overlap, 
   // the next interval start time has to be greater than or equal to the previous end time.
   while(j < si.length) {
-  	console.log(si[i][1], si[j][0])
   	if (si[i][1] <= si[j][0]) {
     	i = j;
       j++;
@@ -34,8 +33,12 @@ function minimumOverlap(intervals) {
 
 const sample = [
 	[7, 9],
-  [2, 4],
-  [5, 8]
+  	[2, 4],
+  	[5, 8]
 ];
 
 minimumOverlap(sample);
+
+
+// Space Complexity: O(1) w.r.t. number count
+// Time Complexity: O(nlogn) w.r.t. length of intervals
