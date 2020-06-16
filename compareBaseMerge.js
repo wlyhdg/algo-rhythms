@@ -6,7 +6,7 @@ And if the given numbers are {1, 34, 3, 98, 9, 76, 45, 4}, then the arrangement 
 */
 
 def compareBaseMerge(arr) {
-  return +arr.sort().reverse.join('');
+  return +arr.sort().reverse().join('');
 }
 
 Time Complexity: O(nlogn)
