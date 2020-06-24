@@ -28,3 +28,6 @@ function sievePrimes(N) {
 }
 
 console.log(sievePrimes(20));
+
+// Time Complexity: O(n^2) wrt max number;
+// Space Complexity: O(n) wrt max number;
