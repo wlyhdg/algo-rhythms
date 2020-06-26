@@ -5,8 +5,7 @@ class Node:
           self.right = None 
            
 
-       // this is a node of the tree , which contains info as data, left , right
-'''
+       # this is a node of the tree , which contains info as data, left , right
 
 def height(root, count = -1):
     if root is None: 
