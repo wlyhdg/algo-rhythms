@@ -19,5 +19,5 @@ var twoSum = function(nums, target) {
     }
 };
 
-// Space: O(n) where n is respect to length of nums
-// Time: O(n) where n is respect to length of nums
+Space: O(n) where n is respect to length of nums
+Time: O(n) where n is respect to length of nums
