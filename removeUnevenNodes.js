@@ -51,3 +51,6 @@ root.right.right.right = new Node(11);
 
 let test = removeUnevenNodes(root);
 console.log(test.right.val === 8)
+
+// Time: O(n) w.r.t. all nodes in tree
+// Space: O(n) w.r.t. all nodes
