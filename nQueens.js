@@ -11,10 +11,8 @@ function rec(row, sol, result, n) {
     // base case if we have exhausted the rows and
     // reached the end of the board
     if (row === n) {
-        let olo = [];
-        for (item of result)
-            olo.push(item)
-        sol.push(olo)
+        let p = parseBoards(result)
+        sol.push(p)
         return sol;
     }
     else {
@@ -58,4 +56,10 @@ function checkOkay(result) {
     }
     
     return true;
+}
+
+function parseBoards(rowColData) {
+    return rowColData.map((col, idx) => {
+        return ".".repeat(col) + 'Q' + ".".repeat(rowColData.length - col - 1);
+    });
 }
